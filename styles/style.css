@@ -1,0 +1,346 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.products .product .product_categorey, .line .product .product_categorey {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 150px;
+}
+
+header {
+  min-height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header nav {
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+header .ham {
+  font-size: 1.4rem;
+}
+
+main {
+  font-family: sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2.5fr 1fr;
+      grid-template-columns: 1fr 2.5fr 1fr;
+}
+
+.container {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.hero {
+  margin-top: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero_photo {
+  height: 60vh;
+  width: 90%;
+  background: url(/img/2019-schwartz-offices-5-600x.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.hero h2 {
+  font-weight: 500;
+  font-size: 32px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.hero span {
+  font-size: 1rem;
+  margin-right: 50px;
+  font-weight: bolder;
+}
+
+.products {
+  margin-top: 6rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.products .product {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.products .product:first-child, .products .product:nth-child(2), .products .product:nth-child(3) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+.products .product .product_categorey {
+  margin-bottom: 2rem;
+}
+
+.products .product .product_description {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+}
+
+.products .product a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+}
+
+.products .product img {
+  width: 17rem;
+}
+
+.li {
+  height: 500vh;
+}
+
+.line {
+  padding: 20px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.line .product {
+  display: -ms-grid;
+  display: grid;
+}
+
+.line .product .product_categorey {
+  margin-top: 5rem;
+}
+
+.line .product .product_description {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+}
+
+.line .product a {
+  text-decoration: none;
+  color: white;
+  background: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8em;
+}
+
+.line .product img {
+  width: 17rem;
+}
+
+.two {
+  margin-top: 0rem;
+}
+
+footer {
+  margin-top: 2rem;
+  min-height: 25vh;
+  font-family: sans-serif;
+  background: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-weight: bolder;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .first-step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 2rem;
+}
+
+footer .second-step, footer .third-step {
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width: 660px) {
+  .line {
+    grid-gap: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
